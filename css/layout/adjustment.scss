@@ -1,0 +1,85 @@
+$container-width: 940px;
+
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-size: 16px;
+	line-height: 1.42;
+	color: $black;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: normal;
+}
+
+.wrapper {
+	min-height: 100%;
+	position: relative;
+	overflow: hidden;
+	min-width: $container-width + 20px;
+}
+
+.section {
+	height: 100vh;
+	min-height: 650px;
+	text-align: center;
+	background-size: cover;
+	background-position: center;
+}
+
+.container {
+	width: $container-width;
+	margin: 0 auto;
+	// position: relative;
+	// top: 50%;
+	// transform: translateY(-50%);
+}
+
+.footer {
+	height: 50px;
+	margin-top: -50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	font-weight: normal;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+ul li {
+	list-style: none;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+footer {
+	min-width: $container-width + 20px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+	content: "";
+	display: table;
+}
+
+.clearfix::after {
+	clear: both;
+}
+
+

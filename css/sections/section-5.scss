@@ -1,0 +1,91 @@
+.menu {
+    background-image: url('../img/bg/bg-5-1.jpg');
+}
+
+
+.menu {
+	&__title {
+		position: absolute;
+		top: 110px;
+		left: 90px;
+		text-align: left;
+		color: white;
+	}
+
+	&__menu {
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+
+	&__item { 
+		float: left;
+		height: 100%;
+
+		&_active {
+			.menu__item-title {
+				color: $yellow;
+			}
+
+			.menu__item-content {
+				width: 550px;
+			}
+		}
+
+		&-trigger {
+			display: block;	
+			float: left;		
+			position: relative;
+			width: 80px;
+			height: 100%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+
+		}
+
+		&-title {
+		 	position: absolute;
+			font-family: 'Gagalin';
+			font-weight: normal;
+			font-size: 40px;
+			line-height: 64px;
+			color: white;
+			top: 50%;
+		 	height: 80px;
+			width: 650px;
+			left: 50%;
+			margin-left: -315px;
+		 	margin-top: -40px;
+		 	white-space: nowrap;
+		 	transform: rotate(-90deg);
+		}
+
+		&-content {
+			background: rgba(47, 50, 52, 0.93);
+			width: 0;
+			float: left;
+			height: 100%;
+			overflow: hidden;
+		}
+		
+		&-text {
+			width: 550px;
+			padding: 60px 35px;
+			color: white;
+			text-align: left;
+		}
+
+	}
+}
+
+.Rectangle_5 {
+  background-color: rgb(207, 216, 220);
+  position: absolute;
+  left: 1021px;
+  top: 2600px;
+  width: 80px;
+  height: 650px;
+  z-index: 90;
+}

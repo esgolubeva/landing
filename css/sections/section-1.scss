@@ -1,0 +1,111 @@
+.hero {
+    background: url('../img/bg/bg-1.jpg');
+}
+
+.hero__header {
+	top: 0;
+	height: 100px;
+	font-size: 0;
+	position: absolute;
+
+	&-left {
+		width: 300px;
+		display: inline-block;
+		vertical-align: middle;
+
+		&__logo {
+			height: 100px;
+			width: 100px;
+			background: url(../img/icons/logo.svg) no-repeat center;
+		}
+	}
+
+	&-right {
+		width: 640px;
+		display: inline-block;
+		vertical-align: middle;
+		text-align: right;
+
+		&__menu {
+			display: inline-block;
+						
+			&__list {
+				text-align: left;
+
+			}
+
+			&__item {
+				position: relative;
+				display: inline-block;
+				margin: 0 15px;
+
+				&::after {
+					position: absolute;
+					display: block;
+					content: '';
+					width: 3px;
+					height: 3px;
+					border-radius: 50%;
+					background:white;
+					right: -15px;
+					top: 50%;
+				}
+
+				&:last-child::after {
+					display: none;
+				}
+			}
+
+			&__link {
+				font-family: 'Ubuntu';
+				font-weight: 500;
+				color: white;
+				font-size: 13px;
+				line-height: 30px;
+				text-transform: uppercase;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+    }
+}
+
+.hero__main {
+
+    &-left {
+	    width: 50%;
+	    float: left;
+    }
+
+   	&-right {
+	    width: 50%;
+	    float: left;
+	    padding-left: 10px;
+
+	    &__text{
+	    	position: absolute;
+	    	top: 50%;
+	    	transform: translateY(-50%);
+	    }
+
+    	&__text-top {
+			color: $yellow;
+			text-align: left;
+    	}
+
+    	&__text-bottom {
+    		font-family: 'Lifehack';
+			font-weight: 500;
+			color: white;
+			font-size: 65px;
+			line-height: 85px;
+			text-align: left;
+    	}
+
+    }
+}
+
+
+
