@@ -577,6 +577,7 @@ footer {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+  max-width: 470px;
 }
 
 .hero__main-right__text-top {
@@ -851,6 +852,10 @@ footer {
 .team__title {
   color: #f9b43b;
   text-align: left;
+}
+
+.team-list {
+  max-width: 470px;
 }
 
 .team-item {
