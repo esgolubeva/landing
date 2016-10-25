@@ -91,23 +91,46 @@
 	
  .order__form__button-block,
  .order__form__check-block,
- .order__form__radio-block   {
+ .order__form__radio-block {
  	text-align: left;
  	margin-left: 20px;
  	margin-bottom: 15px;
- }
+}
 
- // .order__form__check__input,
- // .order__form__radio__input {
- // 	position: absolute;
- // 	left: -9999px;
- // }
+//  .order__form__check__input,
+//  .order__form__radio__input {
+//  	position: absolute;
+//  	left: -9999px;
+// }
 
- // .radio {
- // 	display: inline-block;
- // 	content: '';
- // 	border-radius: 50%;
- // 	width: 15px;
- // 	height: 15px;
- // 	background: white;
- // }
+// .radio {
+//  	position: relative;
+//  	display: inline-block;
+//  	content: '';
+//  	border-radius: 50%;
+//  	width: 15px;
+//  	height: 15px;
+//  	background: white;
+
+//  	&-checked {
+// 	 	content: '';
+// 	    width: 0px;
+// 	    height: 0px;
+// 	    background: $orange-dark;
+// 	    position: absolute;
+// 	    border-radius: 50%;
+// 	    top: 0;
+// 	    left: 0;
+// 	    bottom: 0;
+// 	    right: 0;
+// 	    margin: auto;
+//  	}
+// }
+
+// .radio:checked {
+// 	&-checked {
+// 	 	content: '';
+// 	    width: 7px;
+// 	    height: 7px;
+// 	}
+// }
