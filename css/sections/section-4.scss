@@ -21,12 +21,13 @@
 
     &-list {
         max-width: $container-width / 2 ;
+        margin-left: 20px;
     }
 }
 
 .team-item {
     text-align: left;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 
     &__content {
         display: none;
@@ -96,7 +97,7 @@
 
     &__title {
         font-weight: bold;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     &__description {
