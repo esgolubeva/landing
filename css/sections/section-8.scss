@@ -1,4 +1,96 @@
-.section-8__map {
+.yandex-map {
 	width: 100%;
-	height: calc(100%-60px);
+	min-height: 100%;
+}
+.footer {
+	height: 58px;
+	margin-top: -58px;
+	background-image: url('../img/bg/bg-8.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.footer__left, 
+.footer__right {
+    float: left;
+    width: 50%;
+}
+
+.footer__left {
+	text-align: left;
+}
+
+.footer__right {
+	text-align: right;
+
+}
+
+.social__list {
+	margin-top: 18px;
+	display: inline-block;
+}
+
+.social__item {
+	display: inline-block;
+	margin-right: 20px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.social__link {
+	display: block;
+	width: 24px;
+	height: 20px;
+
+	&:hover {
+		.fb-svg,
+		.vk-svg,
+		.tw-svg,
+		.inst-svg {
+			opacity: 1;
+		}
+	}
+}
+
+.fb-svg,
+.vk-svg,
+.tw-svg,
+.inst-svg {
+	width: 100%;
+	height: 100%;
+	opacity: 0.3;
+	transition: .5s;
+}
+
+.phone-svg {
+	width: 100%;
+	height: 100%;
+}
+
+.footer__adress {
+	font-family: 'Ubuntu';
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 24px;
+	color: white;
+	margin-top: 5px;
+}
+
+.footer__phone {
+	font-family: 'Ubuntu';
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 24px;
+	color: $red;
+}
+
+
+.footer__phone-svg {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 5px;
 }
