@@ -1,5 +1,8 @@
 .order {
     background-image: url('../img/bg/bg-7.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 
     &__title{
     	color: $yellow;
@@ -59,6 +62,8 @@
 
 .order__form__radio,
 .order__form__check {
+	margin-right: 15px;
+
 	&__text {
 		display: inline-block;
 		margin-left: 5px;
@@ -91,3 +96,18 @@
  	margin-left: 20px;
  	margin-bottom: 15px;
  }
+
+ // .order__form__check__input,
+ // .order__form__radio__input {
+ // 	position: absolute;
+ // 	left: -9999px;
+ // }
+
+ // .radio {
+ // 	display: inline-block;
+ // 	content: '';
+ // 	border-radius: 50%;
+ // 	width: 15px;
+ // 	height: 15px;
+ // 	background: white;
+ // }

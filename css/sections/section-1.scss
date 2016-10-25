@@ -1,5 +1,8 @@
 .hero {
     background: url('../img/bg/bg-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .hero__header {

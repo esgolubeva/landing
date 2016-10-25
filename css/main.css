@@ -486,6 +486,9 @@ footer {
 
 .hero {
   background: url("../img/bg/bg-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .hero__header {
@@ -592,6 +595,9 @@ footer {
 
 .best {
   background-image: url("../img/bg/bg-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .best__title {
@@ -827,6 +833,9 @@ footer {
 
 .team {
   background-image: url("../img/bg/bg-4.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .team__block {
@@ -925,6 +934,9 @@ footer {
 
 .menu {
   background-image: url("../img/bg/bg-5-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .menu__title {
@@ -1100,6 +1112,9 @@ footer {
 
 .order {
   background-image: url("../img/bg/bg-7.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .order__title {
@@ -1155,6 +1170,11 @@ footer {
 
 .order__form__textarea {
   height: 100px;
+}
+
+.order__form__radio,
+.order__form__check {
+  margin-right: 15px;
 }
 
 .order__form__radio__text,

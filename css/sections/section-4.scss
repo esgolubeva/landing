@@ -1,5 +1,8 @@
 .team {
     background-image: url('../img/bg/bg-4.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 
     &__block {
     	width: 50%;
