@@ -587,6 +587,7 @@ footer {
 .hero__main-right__text-top {
   color: #f9b43b;
   text-align: left;
+  margin-bottom: 10px;
 }
 
 .hero__main-right__text-bottom {
@@ -804,6 +805,8 @@ footer {
 .burgers__right__burger-name {
   color: white;
   text-align: left;
+  line-height: 64px;
+  margin-bottom: 40px;
 }
 
 .burgers__right__burger-text {
@@ -818,6 +821,7 @@ footer {
 
 .burgers__right__burger-order {
   text-align: left;
+  font-size: 0;
 }
 
 .burgers__right__burger-price {
@@ -870,8 +874,8 @@ footer {
 }
 
 .team-item__content {
-  display: none;
-  padding-top: 10px;
+  height: 0;
+  overflow: hidden;
 }
 
 .team-item__trigger {
@@ -910,7 +914,8 @@ footer {
 }
 
 .team-item_active .team-item__content {
-  display: block;
+  padding-top: 10px;
+  height: auto;
 }
 
 .team-item__photo {

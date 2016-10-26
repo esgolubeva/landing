@@ -143,6 +143,8 @@
 .burgers__right__burger-name {
 	color: white;
 	text-align: left;
+	line-height: 64px;
+	margin-bottom: 40px;
   }
 
 
@@ -158,6 +160,7 @@
 
 .burgers__right__burger-order {
 	text-align: left;
+	font-size: 0;
 }
 
 .burgers__right__burger-price {
