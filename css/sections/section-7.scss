@@ -61,14 +61,7 @@
 	height: 110px;
 }
 
-.order__form__radio,
-.order__form__check {
-	margin-right: 15px;
 
-	&__text {
-		display: inline-block;
-	}
-}
 	
 .order__form__button {
 	border: none;
@@ -97,40 +90,81 @@
  	margin-bottom: 15px;
 }
 
-//  .order__form__check__input,
-//  .order__form__radio__input {
-//  	position: absolute;
-//  	left: -9999px;
-// }
+.order__form__radio,
+.order__form__check {
+	margin-right: 15px;
+	cursor: pointer;
+	font-size: 0;
 
-// .radio {
-//  	position: relative;
-//  	display: inline-block;
-//  	content: '';
-//  	border-radius: 50%;
-//  	width: 15px;
-//  	height: 15px;
-//  	background: white;
+	&__text {
+		display: inline-block;
+		font-size: 14px;
+	}
 
-//  	&-checked {
-// 	 	content: '';
-// 	    width: 0px;
-// 	    height: 0px;
-// 	    background: $orange-dark;
-// 	    position: absolute;
-// 	    border-radius: 50%;
-// 	    top: 0;
-// 	    left: 0;
-// 	    bottom: 0;
-// 	    right: 0;
-// 	    margin: auto;
-//  	}
-// }
+	&__input {
+		position: absolute;
+ 		left: -9999px;
+	}
+}
 
-// .radio:checked {
-// 	&-checked {
-// 	 	content: '';
-// 	    width: 7px;
-// 	    height: 7px;
-// 	}
-// }
+
+
+.radio {
+ 	position: relative;
+ 	display: inline-block;
+ 	content: '';
+ 	border-radius: 50%;
+ 	width: 15px;
+ 	height: 15px;
+ 	background: white;
+ 	margin-right: 10px;
+
+ 	&-checked {
+	 	content: '';
+	    width: 0px;
+	    height: 0px;
+	    background: $orange-dark;
+	    position: absolute;
+	    border-radius: 50%;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	    margin: auto;
+	    transition: .3s;
+ 	}
+}
+
+.order__form__radio__input:checked + .radio .radio-checked {
+	    width: 7px;
+	    height: 7px;
+	
+}
+
+.check {
+ 	position: relative;
+ 	display: inline-block;
+ 	content: '';
+ 	width: 15px;
+ 	height: 15px;
+ 	background: white;
+ 	margin-right: 10px;
+
+ 	&-checked {
+	 	content: '';
+	    width: 0px;
+	    height: 0px;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	    margin: auto;
+	    transition: .3s;
+ 	}
+}
+
+.order__form__check__input:checked + .check .check-checked {
+	    width: 11px;
+	    height: 9px;
+}

@@ -851,7 +851,7 @@ footer {
   top: 0;
   bottom: 0;
   right: 0;
-  padding: 100px 100px 0 80px;
+  padding: 100px 80px 0;
 }
 
 .team__title {
@@ -915,7 +915,7 @@ footer {
 
 .team-item__photo {
   float: left;
-  width: 30%;
+  width: 100px;
 }
 
 .team-item__photo__image {
@@ -925,9 +925,9 @@ footer {
 }
 
 .team-item__text {
-  width: 70%;
+  width: calc(100% - 110px);
   float: left;
-  padding-left: 10px;
+  margin-left: 10px;
   color: white;
   font-size: 14px;
   line-height: 24px;
@@ -1184,16 +1184,6 @@ footer {
   height: 110px;
 }
 
-.order__form__radio,
-.order__form__check {
-  margin-right: 15px;
-}
-
-.order__form__radio__text,
-.order__form__check__text {
-  display: inline-block;
-}
-
 .order__form__button {
   border: none;
   font-family: 'Ubuntu';
@@ -1219,6 +1209,84 @@ footer {
   text-align: left;
   margin-left: 20px;
   margin-bottom: 15px;
+}
+
+.order__form__radio,
+.order__form__check {
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.order__form__radio__text,
+.order__form__check__text {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.order__form__radio__input,
+.order__form__check__input {
+  position: absolute;
+  left: -9999px;
+}
+
+.radio {
+  position: relative;
+  display: inline-block;
+  content: '';
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: white;
+  margin-right: 10px;
+}
+
+.radio-checked {
+  content: '';
+  width: 0px;
+  height: 0px;
+  background: #e35028;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  transition: .3s;
+}
+
+.order__form__radio__input:checked + .radio .radio-checked {
+  width: 7px;
+  height: 7px;
+}
+
+.check {
+  position: relative;
+  display: inline-block;
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: white;
+  margin-right: 10px;
+}
+
+.check-checked {
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  transition: .3s;
+}
+
+.order__form__check__input:checked + .check .check-checked {
+  width: 11px;
+  height: 9px;
 }
 
 .yandex-map {
