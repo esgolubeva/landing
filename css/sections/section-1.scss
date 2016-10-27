@@ -87,16 +87,10 @@
     }
 
    	&-right {
-	    width: 50%;
+	    width: calc(50% - 10px);
 	    float: left;
-	    padding-left: 10px;
-
-	    &__text{
-	    	position: absolute;
-	    	top: 50%;
-	    	transform: translateY(-50%);
-	    	max-width: $container-width / 2;
-	    }
+	    margin-left: 10px;
+	    padding-top: 130px;
 
     	&__text-top {
 			color: $yellow;
