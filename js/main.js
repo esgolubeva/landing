@@ -65,7 +65,7 @@ $(document).ready(function() {
 
 			var $this = $(e.target);
 
-			if (!$this.closest('.menu__list')) {
+			if (!$this.closest('.menu__list').length) {
 				$('.menu__item-content').animate( { width: "0" } , 500);
 				$('.menu__item').removeClass('menu__item_active');
 			} 
