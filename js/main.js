@@ -72,3 +72,54 @@ $(document).ready(function() {
 	});
 
 });
+
+
+//slider
+$(document).ready(function() {
+
+	var moveSlide = function (container, slideNum) {
+		var
+			items = container.find('.slider__item'),
+			activeItem = items.filter('.active'),
+			reqItem = items.eq(slideNum),
+			reqIndex = reqItem.index(),
+			list = container.find('.slider__list');
+
+		if (reqItem.length) {
+			list.stop(true, true).animate({
+				'left' : -reqIndex * 100 + '%'
+			}, 700, function () {
+				activeItem.removeClass('active');
+				reqItem.addClass('active');
+			})
+		}
+
+	}
+
+	$('.slider__btn').on('click',function(e) {
+		e.preventDefault();
+
+		var
+			$this = $(this),
+			container = $this.closest('.slider'),
+			items = container.find('.slider__item'),
+			activeItem = items.filter('.active'),
+			nextItem = activeItem.next(),
+			prevItem = activeItem.prev();
+
+		if ($this.hasClass('slider__btn-next')){ 
+			if (nextItem.length) {
+				moveSlide(container, nextItem.index());
+			} else {
+				moveSlide(container, 0);
+			}
+		} else { // листаем назад
+			if (prevItem.length) {
+				moveSlide(container, prevItem.index());
+			} else {
+				moveSlide(container, items.length - 1); 
+			}
+		
+		}
+	});
+});

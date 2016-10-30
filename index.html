@@ -111,76 +111,254 @@
 	    </div>
         <div class="section burgers"> 
 	        <div class="container">
-	        	 <div class="burgers__main clearfix">
-	         		<div class="burgers__left">
-	         			<img src="img/content/burgers-slider/dark.png" alt="burger" class="burger-photo">
-	         			<div class="ingredients">
-	         				<div class="ingredients__icon"></div>
-	         				<div class="ingredients__title">
-	         					Состав
-	         				</div>
-	         				<div class="ingredients__dropdown">
-	         					<table class="ingredients__table">
-	         						<tr class="ingredients__table-row">	
-										<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/beef.svg"></td>
-										<td class="ingredients__table-col ingredients__table-col__name">Говядина</td>
-										<td class="ingredients__table-col ingredients__table-col__weight">300 г</td>
-	         						</tr>
-	         						<tr class="ingredients__table-row">	
-										<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/buns.svg"></td>
-										<td class="ingredients__table-col ingredients__table-col__name">Булочки</td>
-										<td class="ingredients__table-col ingredients__table-col__weight">100 г</td>
-	         						</tr>
-	         						<tr class="ingredients__table-row">	
-										<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/salad.svg"></td>
-										<td class="ingredients__table-col ingredients__table-col__name">Зелень</td>
-										<td class="ingredients__table-col ingredients__table-col__weight">70 г</td>
-	         						</tr>
-	         						<tr class="ingredients__table-row">	
-										<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/sauce.svg"></td>
-										<td class="ingredients__table-col ingredients__table-col__name">Соус</td>
-										<td class="ingredients__table-col ingredients__table-col__weight">150 г</td>
-	         						</tr>
-	         						<tr class="ingredients__table-row">	
-										<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/cucumber.svg"></td>
-										<td class="ingredients__table-col ingredients__table-col__name">Овощи</td>
-										<td class="ingredients__table-col ingredients__table-col__weight">200 г</td>
-	         						</tr>
-	         						<tr class="ingredients__table-row">	
-										<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/cheese.svg"></td>
-										<td class="ingredients__table-col ingredients__table-col__name">Сыр</td>
-										<td class="ingredients__table-col ingredients__table-col__weight">80 г</td>
-	         						</tr>
-	         					</table>
-	         				</div>
-	         			</div>
-	         			<div class="kkal">
-	         				<div class="kkal__icon" style="background-image: url('img/icons/kkal.svg')"></div>
-	         				<div class="kkal__value">1200</div>
-	         				<div class="kkal__text">ккал</div>
-	         			</div>
-	         		</div>
-	         		<div class="burgers__right">
-		         		<div class="burgers__right__text">
-		         			<div class="burgers__right__burger-name title">Dark Beef Burger</div>
-		         			<div class="burgers__right__burger-text">
-		         				Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
-		         			</div>	
-		         			<div class="burgers__right__burger-order">
-								<div class="burgers__right__burger-price">
-									<span class="burgers__right__burger-price-value">500</span> рублей
+	        	<div class="slider">
+		        	<div class="slider__controls">
+						<a href="" class="slider__btn slider__btn-prev">
+							<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 28.685 14.479" viewBox="0 0 28.685 14.479" x="0px" y="0px" width="28.685px" height="14.479px" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:space="preserve" version="1.1">
+								<g>
+									<g>
+										<path fill="#ffffff" d="M 14.332 14.479 c -1.279 0 -2.554 -0.486 -3.525 -1.458 L 0.268 1.681 c -0.376 -0.404 -0.353 -1.037 0.052 -1.413 c 0.403 -0.374 1.036 -0.354 1.413 0.052 l 10.514 11.314 c 1.145 1.143 3.049 1.142 4.218 -0.026 L 26.952 0.319 c 0.378 -0.405 1.011 -0.426 1.413 -0.052 c 0.404 0.376 0.428 1.009 0.052 1.413 L 17.903 12.995 C 16.913 13.986 15.62 14.479 14.332 14.479 Z" />
+									</g>
+								</g>
+							</svg>
+						</a>
+						<a href="" class="slider__btn slider__btn-next">
+							<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 28.685 14.479" viewBox="0 0 28.685 14.479" x="0px" y="0px" width="28.685px" height="14.479px" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:space="preserve" version="1.1">
+								<g>
+									<g>
+										<path fill="#ffffff" d="M 14.332 14.479 c -1.279 0 -2.554 -0.486 -3.525 -1.458 L 0.268 1.681 c -0.376 -0.404 -0.353 -1.037 0.052 -1.413 c 0.403 -0.374 1.036 -0.354 1.413 0.052 l 10.514 11.314 c 1.145 1.143 3.049 1.142 4.218 -0.026 L 26.952 0.319 c 0.378 -0.405 1.011 -0.426 1.413 -0.052 c 0.404 0.376 0.428 1.009 0.052 1.413 L 17.903 12.995 C 16.913 13.986 15.62 14.479 14.332 14.479 Z" />
+									</g>
+								</g>
+							</svg>
+						</a>
+					</div>
+	        		<div class="slider__block">
+	        			<ul class="slider__list">
+							<li class="slider__item active">
+								<div class="slider__item-content">
+									<div class="burgers__main clearfix">
+						         		<div class="burgers__left">
+						         			<img src="img/content/burgers-slider/dark.png" alt="burger" class="burger-photo">
+						         			<div class="ingredients">
+						         				<div class="ingredients__icon"></div>
+						         				<div class="ingredients__title">
+						         					Состав
+						         				</div>
+						         				<div class="ingredients__dropdown">
+						         					<table class="ingredients__table">
+						         						<tr class="ingredients__table-row">	
+															<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/beef.svg"></td>
+															<td class="ingredients__table-col ingredients__table-col__name">Говядина</td>
+															<td class="ingredients__table-col ingredients__table-col__weight">300 г</td>
+						         						</tr>
+						         						<tr class="ingredients__table-row">	
+															<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/buns.svg"></td>
+															<td class="ingredients__table-col ingredients__table-col__name">Булочки</td>
+															<td class="ingredients__table-col ingredients__table-col__weight">100 г</td>
+						         						</tr>
+						         						<tr class="ingredients__table-row">	
+															<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/salad.svg"></td>
+															<td class="ingredients__table-col ingredients__table-col__name">Зелень</td>
+															<td class="ingredients__table-col ingredients__table-col__weight">70 г</td>
+						         						</tr>
+						         						<tr class="ingredients__table-row">	
+															<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/sauce.svg"></td>
+															<td class="ingredients__table-col ingredients__table-col__name">Соус</td>
+															<td class="ingredients__table-col ingredients__table-col__weight">150 г</td>
+						         						</tr>
+						         						<tr class="ingredients__table-row">	
+															<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/cucumber.svg"></td>
+															<td class="ingredients__table-col ingredients__table-col__name">Овощи</td>
+															<td class="ingredients__table-col ingredients__table-col__weight">200 г</td>
+						         						</tr>
+						         						<tr class="ingredients__table-row">	
+															<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/cheese.svg"></td>
+															<td class="ingredients__table-col ingredients__table-col__name">Сыр</td>
+															<td class="ingredients__table-col ingredients__table-col__weight">80 г</td>
+						         						</tr>
+						         					</table>
+						         				</div>
+						         			</div>
+						         			<div class="kkal">
+						         				<div class="kkal__icon" style="background-image: url('img/icons/kkal.svg')"></div>
+						         				<div class="kkal__value">1200</div>
+						         				<div class="kkal__text">ккал</div>
+						         			</div>
+						         		</div>
+						         		<div class="burgers__right">
+							         		<div class="burgers__right__text">
+							         			<div class="burgers__right__burger-name title">Dark Beef Burger</div>
+							         			<div class="burgers__right__burger-text">
+							         				Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+							         			</div>	
+							         			<div class="burgers__right__burger-order">
+													<div class="burgers__right__burger-price">
+														<span class="burgers__right__burger-price-value">500</span> рублей
+													</div>
+													<div class="burgers__right__burger-button">
+														<a href="#" class="button">
+							         						<div class="button__container">
+							         							Заказать
+							         						</div>
+							         					</a>
+							         				</div>
+							         			</div>	
+						         			</div>
+						         		</div>
+						         	</div>
 								</div>
-								<div class="burgers__right__burger-button">
-									<a href="#" class="button">
-		         						<div class="button__container">
-		         							Заказать
-		         						</div>
-		         					</a>
-		         				</div>
-		         			</div>	
-	         			</div>
-	         		</div>
-	         	</div>
+							</li>
+							<li class="slider__item">
+								<div class="slider__item-content">
+									<div class="burgers__main clearfix">
+						         		<div class="burgers__left">
+						         			<img src="img/content/burgers-slider/burger_sandwich_PNG4124.png" alt="burger" class="burger-photo">
+						         			<div class="ingredients">
+						         				<div class="ingredients__icon"></div>
+						         				<div class="ingredients__title">
+						         					Состав
+						         				</div>
+						         				<div class="ingredients__dropdown">
+						         					<table class="ingredients__table">
+						         						<tr class="ingredients__table-row">	
+															<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/beef.svg"></td>
+															<td class="ingredients__table-col ingredients__table-col__name">Говядина</td>
+															<td class="ingredients__table-col ingredients__table-col__weight">300 г</td>
+						         						</tr>
+						         						<tr class="ingredients__table-row">	
+															<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/buns.svg"></td>
+															<td class="ingredients__table-col ingredients__table-col__name">Булочки</td>
+															<td class="ingredients__table-col ingredients__table-col__weight">100 г</td>
+						         						</tr>
+						         						<tr class="ingredients__table-row">	
+															<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/salad.svg"></td>
+															<td class="ingredients__table-col ingredients__table-col__name">Зелень</td>
+															<td class="ingredients__table-col ingredients__table-col__weight">70 г</td>
+						         						</tr>
+						         						<tr class="ingredients__table-row">	
+															<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/sauce.svg"></td>
+															<td class="ingredients__table-col ingredients__table-col__name">Соус</td>
+															<td class="ingredients__table-col ingredients__table-col__weight">150 г</td>
+						         						</tr>
+						         						<tr class="ingredients__table-row">	
+															<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/cucumber.svg"></td>
+															<td class="ingredients__table-col ingredients__table-col__name">Овощи</td>
+															<td class="ingredients__table-col ingredients__table-col__weight">200 г</td>
+						         						</tr>
+						         						<tr class="ingredients__table-row">	
+															<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/cheese.svg"></td>
+															<td class="ingredients__table-col ingredients__table-col__name">Сыр</td>
+															<td class="ingredients__table-col ingredients__table-col__weight">80 г</td>
+						         						</tr>
+						         					</table>
+						         				</div>
+						         			</div>
+						         			<div class="kkal">
+						         				<div class="kkal__icon" style="background-image: url('img/icons/kkal.svg')"></div>
+						         				<div class="kkal__value">1200</div>
+						         				<div class="kkal__text">ккал</div>
+						         			</div>
+						         		</div>
+						         		<div class="burgers__right">
+							         		<div class="burgers__right__text">
+							         			<div class="burgers__right__burger-name title">Dark Beef Burger</div>
+							         			<div class="burgers__right__burger-text">
+							         				Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+							         			</div>	
+							         			<div class="burgers__right__burger-order">
+													<div class="burgers__right__burger-price">
+														<span class="burgers__right__burger-price-value">600</span> рублей
+													</div>
+													<div class="burgers__right__burger-button">
+														<a href="#" class="button">
+							         						<div class="button__container">
+							         							Заказать
+							         						</div>
+							         					</a>
+							         				</div>
+							         			</div>	
+						         			</div>
+						         		</div>
+						         	</div>
+								</div>
+							</li>
+							<li class="slider__item">
+								<div class="slider__item-content">
+									<div class="burgers__main clearfix">
+						         		<div class="burgers__left">
+						         			<img src="img/content/burgers-slider/Chiken burger.png" alt="burger" class="burger-photo">
+						         			<div class="ingredients">
+						         				<div class="ingredients__icon"></div>
+						         				<div class="ingredients__title">
+						         					Состав
+						         				</div>
+						         				<div class="ingredients__dropdown">
+						         					<table class="ingredients__table">
+						         						<tr class="ingredients__table-row">	
+															<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/beef.svg"></td>
+															<td class="ingredients__table-col ingredients__table-col__name">Говядина</td>
+															<td class="ingredients__table-col ingredients__table-col__weight">300 г</td>
+						         						</tr>
+						         						<tr class="ingredients__table-row">	
+															<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/buns.svg"></td>
+															<td class="ingredients__table-col ingredients__table-col__name">Булочки</td>
+															<td class="ingredients__table-col ingredients__table-col__weight">100 г</td>
+						         						</tr>
+						         						<tr class="ingredients__table-row">	
+															<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/salad.svg"></td>
+															<td class="ingredients__table-col ingredients__table-col__name">Зелень</td>
+															<td class="ingredients__table-col ingredients__table-col__weight">70 г</td>
+						         						</tr>
+						         						<tr class="ingredients__table-row">	
+															<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/sauce.svg"></td>
+															<td class="ingredients__table-col ingredients__table-col__name">Соус</td>
+															<td class="ingredients__table-col ingredients__table-col__weight">150 г</td>
+						         						</tr>
+						         						<tr class="ingredients__table-row">	
+															<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/cucumber.svg"></td>
+															<td class="ingredients__table-col ingredients__table-col__name">Овощи</td>
+															<td class="ingredients__table-col ingredients__table-col__weight">200 г</td>
+						         						</tr>
+						         						<tr class="ingredients__table-row">	
+															<td class="ingredients__table-col ingredients__table-col__icon" background="img/icons/cheese.svg"></td>
+															<td class="ingredients__table-col ingredients__table-col__name">Сыр</td>
+															<td class="ingredients__table-col ingredients__table-col__weight">80 г</td>
+						         						</tr>
+						         					</table>
+						         				</div>
+						         			</div>
+						         			<div class="kkal">
+						         				<div class="kkal__icon" style="background-image: url('img/icons/kkal.svg')"></div>
+						         				<div class="kkal__value">1200</div>
+						         				<div class="kkal__text">ккал</div>
+						         			</div>
+						         		</div>
+						         		<div class="burgers__right">
+							         		<div class="burgers__right__text">
+							         			<div class="burgers__right__burger-name title">Dark Beef Burger</div>
+							         			<div class="burgers__right__burger-text">
+							         				Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+							         			</div>	
+							         			<div class="burgers__right__burger-order">
+													<div class="burgers__right__burger-price">
+														<span class="burgers__right__burger-price-value">600</span> рублей
+													</div>
+													<div class="burgers__right__burger-button">
+														<a href="#" class="button">
+							         						<div class="button__container">
+							         							Заказать
+							         						</div>
+							         					</a>
+							         				</div>
+							         			</div>	
+						         			</div>
+						         		</div>
+						         	</div>
+								</div>
+							</li>
+	        		</div>
+	        	</div>
+	        	 
 	         </div> 
 	        
 	    </div>

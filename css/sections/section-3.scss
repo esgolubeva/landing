@@ -20,6 +20,7 @@
 
 .burgers__left {
 	position: relative;
+	padding-top: 30px;
 }
 
 .ingredients {
@@ -136,7 +137,7 @@
 }
 
 .burger-photo {
-	width: 100%;
+	width: 460px;
 	height: auto;
 }
 
@@ -180,3 +181,51 @@
 	display: inline-block;
 }
 
+
+
+.slider__btn {
+  display: block;
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+}
+
+.slider__btn-next {
+  left: 100%;
+  transform: rotate(-90deg)
+}
+
+.slider__btn-prev {
+  right: 100%;
+  transform: rotate(90deg)
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__block {
+	height: 500px;
+	width: 940px;
+	overflow: hidden;
+	position: relative;
+}
+
+.slider__list {
+  position: absolute;
+  top: 85px;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.slider__item {
+	display: inline-block;
+	white-space: normal;
+	height: 480px;
+	width: 940px;
+}
+
+* {
+	border: 1ps solid grey;
+}

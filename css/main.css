@@ -657,7 +657,9 @@ footer {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9b43b+0,eb8d38+45,eb8d38+55,f9b43b+100 */
   background: #f9b43b;
   /* Old browsers */
+  background: -moz-linear-gradient(top, #f9b43b 0%, #eb8d38 45%, #eb8d38 55%, #f9b43b 100%);
   /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f9b43b 0%, #eb8d38 45%, #eb8d38 55%, #f9b43b 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #f9b43b 0%, #eb8d38 45%, #eb8d38 55%, #f9b43b 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -677,6 +679,7 @@ footer {
 
 .burgers__left {
   position: relative;
+  padding-top: 30px;
 }
 
 .ingredients {
@@ -790,7 +793,7 @@ footer {
 }
 
 .burger-photo {
-  width: 100%;
+  width: 460px;
   height: auto;
 }
 
@@ -831,6 +834,53 @@ footer {
 
 .burgers__right__burger-button {
   display: inline-block;
+}
+
+.slider__btn {
+  display: block;
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+}
+
+.slider__btn-next {
+  left: 100%;
+  transform: rotate(-90deg);
+}
+
+.slider__btn-prev {
+  right: 100%;
+  transform: rotate(90deg);
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__block {
+  height: 500px;
+  width: 940px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider__list {
+  position: absolute;
+  top: 85px;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.slider__item {
+  display: inline-block;
+  white-space: normal;
+  height: 480px;
+  width: 940px;
+}
+
+* {
+  border: 1ps solid grey;
 }
 
 .team {
@@ -900,9 +950,7 @@ footer {
 }
 
 .team-item_active .team-item__trigger::before {
-  -webkit-transform: rotate(-180deg);
-      -ms-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+  transform: rotate(-180deg);
 }
 
 .team-item_active .team-item__content {
@@ -997,12 +1045,10 @@ footer {
   height: 80px;
   width: 650px;
   left: 50%;
-  margin-left: -315px;
+  margin-left: -325px;
   margin-top: -40px;
   white-space: nowrap;
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .menu__item-content {
@@ -1038,9 +1084,7 @@ footer {
 
 .reviews__review:hover .reviews__review__hover {
   opacity: 1;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 .reviews__review__pic {
@@ -1052,8 +1096,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .reviews__review__hover {
@@ -1063,9 +1106,7 @@ footer {
   right: 0;
   bottom: 0;
   background: rgba(20, 20, 20, 0.7);
-  -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
   opacity: 0;
   transition: .3s;
   padding: 50px 20px 0;
