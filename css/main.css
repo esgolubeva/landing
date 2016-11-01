@@ -1404,14 +1404,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .order__form__label__text {
   text-align: left;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .order__form__input {
   width: 100%;
   height: 35px;
   border-radius: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   padding: 0 20px;
 }
 
@@ -1421,6 +1421,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .order__form__textarea {
   height: 110px;
+  margin-bottom: 0;
 }
 
 .order__form__button {
@@ -1436,6 +1437,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: none;
   font-weight: 300;
   color: white;
+  margin-left: 3px;
 }
 
 .order__form__button-reset:hover {
@@ -1452,16 +1454,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .order__form__radio,
 .order__form__check {
-  margin-right: 15px;
+  margin-right: 20px;
   cursor: pointer;
   font-size: 0;
+}
+
+.order__form__radio:last-child,
+.order__form__check:last-child {
+  margin-right: 0;
 }
 
 .order__form__radio__text,
 .order__form__check__text {
   display: inline-block;
   font-size: 14px;
-  padding-left: 10px;
+  padding-left: 9px;
   vertical-align: middle;
 }
 
