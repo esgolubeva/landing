@@ -192,6 +192,12 @@ $(document).ready(function () {
 		scrollToSection(1);
 	});
 
+	$('.burger-button').on('click', function(e){ // клик на кнопку заказать
+		e.preventDefault();
+
+		scrollToSection(6);
+	});
+
 	$(document).on('keydown', function (e) { //на клавиши клавиатуры
 		var deltaY = e.originalEvent.deltaY,
 			activeSection = sections.filter('.active'),

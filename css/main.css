@@ -1041,6 +1041,7 @@ h1, h2, h3, h4, h5, h6 {
 .team__title {
   color: #f9b43b;
   text-align: left;
+  margin-bottom: 68px;
 }
 
 .team-list {
@@ -1050,7 +1051,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .team-item {
   text-align: left;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .team-item__content {
@@ -1088,6 +1089,10 @@ h1, h2, h3, h4, h5, h6 {
   transition: .3s;
 }
 
+.team-item_active {
+  margin-bottom: 30px;
+}
+
 .team-item_active .team-item__trigger {
   color: #f9b43b;
 }
@@ -1113,9 +1118,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .team-item__text {
-  width: calc(100% - 110px);
+  width: calc(100% - 120px);
   float: left;
-  margin-left: 10px;
+  margin-left: 20px;
   color: white;
   font-size: 14px;
   line-height: 24px;
@@ -1407,6 +1412,11 @@ h1, h2, h3, h4, h5, h6 {
   height: 35px;
   border-radius: 5px;
   margin-bottom: 15px;
+  padding: 0 20px;
+}
+
+.order__form__input:focus {
+  border: 2px solid #f9b43b;
 }
 
 .order__form__textarea {
@@ -1452,6 +1462,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   font-size: 14px;
   padding-left: 10px;
+  vertical-align: middle;
 }
 
 .order__form__radio__input,
@@ -1468,6 +1479,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 15px;
   height: 15px;
   background: white;
+  vertical-align: middle;
 }
 
 .radio-checked {
@@ -1497,6 +1509,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 15px;
   height: 15px;
   background: white;
+  vertical-align: middle;
 }
 
 .check-checked {
