@@ -123,3 +123,177 @@ $(document).ready(function() {
 		}
 	});
 });
+
+// one page scroll
+
+$(document).ready(function () {
+
+	var sections = $('.section'),
+		display = $('.maincontent'),
+		inScroll = false; //обозначает находится ли секция в состоянии скролла
+
+	var scrollToSection = function (sectionEq) {
+		var position = 0;
+
+		if(!inScroll) {
+
+			inScroll = true;
+
+			position = (sections.eq(sectionEq).index() * -100) + '%';
+
+			sections.eq(sectionEq).addClass('active').siblings().removeClass('active');
+
+			display.css({
+				'transform' : 'translate3D(0, '+ position +', 0)'
+			});
+
+			setTimeout(function () {
+				inScroll = false;
+
+				$('.dots-item').eq(sectionEq).addClass('active').siblings().removeClass('active');
+			}, 1300)
+		}
+	}
+
+	$('.wrapper').on('wheel', function (e){
+
+		var deltaY = e.originalEvent.deltaY,
+			activeSection = sections.filter('.active'),
+			nextSection = activeSection.next(),
+			prevSection = activeSection.prev();
+
+		
+		if (deltaY > 0) { // к следующей секции
+			if (nextSection.length) {
+				scrollToSection(nextSection.index());
+			}
+		}
+
+		if (deltaY < 0) { // к предыдущей секции
+			if (prevSection.length) {
+				scrollToSection(prevSection.index());
+			}
+		}
+
+	});
+
+
+	$('.dots-item__link, .nav__link').on('click', function(e){ // клик на точки и элементы меню
+		e.preventDefault();
+
+		var href = parseInt($(this).attr('href'));
+
+		scrollToSection(href);
+	});
+
+	$('.arrow-scroll').on('click', function(e){ // клик на стрелку
+		e.preventDefault();
+
+		scrollToSection(1);
+	});
+
+	$(document).on('keydown', function (e) { //на клавиши клавиатуры
+		var deltaY = e.originalEvent.deltaY,
+			activeSection = sections.filter('.active'),
+			nextSection = activeSection.next(),
+			prevSection = activeSection.prev();
+
+		switch (e.keyCode) {
+			case 40 : //стрелка вниз
+				if (nextSection.length) {
+					scrollToSection(nextSection.index());
+				}
+				break;
+
+			case 38 : //стрелка вверх
+				if (prevSection.length) {
+				scrollToSection(prevSection.index());
+			}
+			break;
+		}
+
+	})
+
+});
+
+
+
+// input mask 
+
+$(document).ready(function () {
+
+	$('.input-mask').inputmask('+7 (999) 999 99 99');
+
+});
+
+
+// Подключение yandex карты
+
+
+ymaps.ready(function () {
+
+	var myMap = new ymaps.Map('map', {
+        center: [59.9182,30.3056], // Санкт-Петербург
+        zoom: 11,
+        controls : []
+    }, {
+        searchControlProvider: 'yandex#search'
+    }),
+
+	myPlacemark1 = new ymaps.Placemark([59.8774,30.2644], {
+        hintContent: 'MrBurger',
+        balloonContent: 'Это красивая метка'
+    }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/content/map-icon.png',
+        iconImageSize: [30, 42],
+        iconImageOffset: [-3, -42]
+    }),
+
+    myPlacemark2 = new ymaps.Placemark([59.9143,30.3907], {
+        hintContent: 'MrBurger',
+        balloonContent: 'Это красивая метка'
+    }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/content/map-icon.png',
+        iconImageSize: [30, 42],
+        iconImageOffset: [-3, -42]
+    }),
+    
+    myPlacemark3 = new ymaps.Placemark([59.9467,30.2472], {
+        hintContent: 'MrBurger',
+        balloonContent: 'Это красивая метка'
+    }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/content/map-icon.png',
+        iconImageSize: [30, 42],
+        iconImageOffset: [-3, -42]
+    }),
+
+    myPlacemark4 = new ymaps.Placemark([59.9674,30.4209], {
+        hintContent: 'MrBurger',
+        balloonContent: 'Это красивая метка'
+    }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/content/map-icon.png',
+        iconImageSize: [30, 42],
+        iconImageOffset: [-3, -42]
+    });
+	 myMap.geoObjects.add(myPlacemark1).add(myPlacemark2).add(myPlacemark3).add(myPlacemark4);
+	 myMap.behaviors.disable('scrollZoom');
+});
+
+
+// fancybox
+
+$('a.modal').on('click', function(e) {
+	e.preventDefault();
+	$.fancybox($('#popup'));
+});
+
+$('#popup__close').on('click', function(e){ 
+	e.preventDefault();
+	$.fancybox.close();
+});
+
+

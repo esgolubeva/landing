@@ -3,13 +3,17 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    position: relative;
+}
+
+.hero .container {
+	position: static;
 }
 
 .hero__header {
 	top: 0;
 	height: 100px;
 	font-size: 0;
-	position: absolute;
 
 	&-left {
 		width: 140px;
@@ -80,6 +84,9 @@
 }
 
 .hero__main {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 
     &-left {
 	    width: 50%;
@@ -103,7 +110,7 @@
 			font-weight: 500;
 			color: white;
 			font-size: 65px;
-			line-height: 85px;
+			line-height: 1em;
 			text-align: left;
     	}
 
@@ -111,4 +118,31 @@
 }
 
 
+.arrow-scroll {
+	display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 60px;
+    height: 14px;
+    margin-left: -15px;
+    transition: .3s;
+    height: 60px;
+}
 
+.arrow-scroll__pic {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: auto;
+	transition: .2s;
+	width: 30px;
+	height: 14px;
+}
+
+.arrow-scroll:hover .arrow-scroll__pic{
+	transform: translate(-50%, -150%);
+	width: 39px;
+	height: 18px;
+}

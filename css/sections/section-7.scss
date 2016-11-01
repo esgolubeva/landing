@@ -1,3 +1,8 @@
+.order .container {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
 .order {
     background-image: url('../img/bg/bg-7.jpg');
     background-repeat: no-repeat;
@@ -6,6 +11,7 @@
 
     &__title{
     	color: $yellow;
+    	text-align: center;
     }
 
    	&__form {
@@ -165,6 +171,6 @@
 }
 
 .order__form__check__input:checked + .check .check-checked {
-	    width: 11px;
-	    height: 9px;
+	width: 11px;
+	height: 9px;
 }

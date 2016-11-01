@@ -3,20 +3,21 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    position: relative;
 
     &__block {
-    	width: 50%;
-    	background: rgba(47, 50, 52, 0.93);
-    	position: absolute;
-    	top: 0;
-    	bottom: 0;
-    	right: 0;
-    	padding: 100px 80px 0;
+        width: 50%;
+        background: rgba(47, 50, 52, 0.93);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        padding: 100px 80px 0;
     }
 
     &__title {
-    	color: $yellow;
-    	text-align: left;
+        color: $yellow;
+        text-align: left;
     }
 
     &-list {
@@ -41,6 +42,11 @@
         font-size: 14px;
         line-height: 28px;
         position: relative;
+        transition: color .3s;
+
+        &:hover {
+            color: $yellow;
+        }
 
         &::before {
             position: absolute;

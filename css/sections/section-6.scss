@@ -52,7 +52,7 @@
 			color: white;
 			font-size: 14px;
 			line-height: 28px;
-			margin-bottom: 30px;
+			margin-bottom: 25px;
 		}
 
 		&__text {
@@ -82,4 +82,54 @@
 			}
 		}
 	}
+}
+
+.rewiews__popup {
+	width: 430px;
+	padding: 10px 5px;
+	position: relative;
+	display: none;
+}
+
+.rewiews__popup__name {
+	font-family: 'Gagalin';
+	font-weight: normal;
+	text-transform: uppercase;
+	color: $black;
+	font-size: 14px;
+	line-height: 28px;
+	margin-bottom: 20px;
+}
+
+.rewiews__popup__text {
+	font-family: 'Ubuntu';
+	font-weight: 300;
+	color: $black;
+	font-size: 14px;
+	line-height: 24px;	
+}
+
+.fancybox-close {
+	display: none;
+}
+
+.rewiews__popup__close-button {
+	position: absolute;
+	display: block;
+	content:'';
+    top: 5px;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    z-index: 8040;
+}
+
+.rewiews__popup__close-button path{
+	fill: $red-light;
+	transition: .3s;
+}
+
+.rewiews__popup__close-button:hover path{
+	fill: $red;
 }

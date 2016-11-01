@@ -7,6 +7,11 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b43b', endColorstr='#f9b43b',GradientType=0 ); /* IE6-9 */
 }
 
+.burgers .container {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
 .burgers__main {
     height: 430px;
  }
@@ -64,6 +69,10 @@
     transition: opacity .3s;
 }
 
+.ingredients__table {
+	border-collapse: collapse;
+}
+
 .ingredients__table-col{
 	font-family: 'Ubuntu';
 	font-weight: 500;
@@ -79,13 +88,15 @@
 	}
 
 	&__name{
-		padding-left: 20px;
+		padding: 0 20px;
 		min-width: 140px;
 		text-align: left;
 	}
 
 	&__weight {
 		white-space: nowrap;
+		min-width: 45px;
+		text-align: right;
 	}
 }
 
@@ -191,6 +202,15 @@
   top: 50%;
 }
 
+.slider__btn__pic {
+	transform: translateY(0) scale(1);
+	transition: .2s;
+}
+
+.slider__btn:hover .slider__btn__pic {
+	transform: translateY(50%) scale(1.2);
+}
+
 .slider__btn-next {
   left: 100%;
   transform: rotate(-90deg)
@@ -226,6 +246,3 @@
 	width: 940px;
 }
 
-* {
-	border: 1ps solid grey;
-}
