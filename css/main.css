@@ -1090,7 +1090,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .team-item_active {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .team-item_active .team-item__trigger {
@@ -1102,13 +1102,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .team-item_active .team-item__content {
-  padding-top: 10px;
+  margin-top: 4px;
   height: auto;
 }
 
 .team-item__photo {
   float: left;
   width: 100px;
+  margin-top: 6px;
 }
 
 .team-item__photo__image {
