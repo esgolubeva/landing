@@ -248,45 +248,45 @@ $(document).ready(function() {
                 searchControlProvider: 'yandex#search'
             }),
 
-            var myPlacemark1 = new ymaps.Placemark([59.8774, 30.2644], {
-                    hintContent: 'MrBurger',
-                    balloonContent: 'Это красивая метка'
-                }, {
-                    iconLayout: 'default#image',
-                    iconImageHref: 'img/content/map-icon.png',
-                    iconImageSize: [30, 42],
-                    iconImageOffset: [-3, -42]
-                }),
+            myPlacemark1 = new ymaps.Placemark([59.8774, 30.2644], {
+                hintContent: 'MrBurger',
+                balloonContent: 'Это красивая метка'
+            }, {
+                iconLayout: 'default#image',
+                iconImageHref: 'img/content/map-icon.png',
+                iconImageSize: [30, 42],
+                iconImageOffset: [-3, -42]
+            }),
 
-                var myPlacemark2 = new ymaps.Placemark([59.9143, 30.3907], {
-                        hintContent: 'MrBurger',
-                        balloonContent: 'Это красивая метка'
-                    }, {
-                        iconLayout: 'default#image',
-                        iconImageHref: 'img/content/map-icon.png',
-                        iconImageSize: [30, 42],
-                        iconImageOffset: [-3, -42]
-                    }),
+            myPlacemark2 = new ymaps.Placemark([59.9143, 30.3907], {
+                hintContent: 'MrBurger',
+                balloonContent: 'Это красивая метка'
+            }, {
+                iconLayout: 'default#image',
+                iconImageHref: 'img/content/map-icon.png',
+                iconImageSize: [30, 42],
+                iconImageOffset: [-3, -42]
+            }),
 
-                    var myPlacemark3 = new ymaps.Placemark([59.9467, 30.2472], {
-                            hintContent: 'MrBurger',
-                            balloonContent: 'Это красивая метка'
-                        }, {
-                            iconLayout: 'default#image',
-                            iconImageHref: 'img/content/map-icon.png',
-                            iconImageSize: [30, 42],
-                            iconImageOffset: [-3, -42]
-                        }),
+            myPlacemark3 = new ymaps.Placemark([59.9467, 30.2472], {
+                hintContent: 'MrBurger',
+                balloonContent: 'Это красивая метка'
+            }, {
+                iconLayout: 'default#image',
+                iconImageHref: 'img/content/map-icon.png',
+                iconImageSize: [30, 42],
+                iconImageOffset: [-3, -42]
+            }),
 
-                        var myPlacemark4 = new ymaps.Placemark([59.9674, 30.4209], {
-                            hintContent: 'MrBurger',
-                            balloonContent: 'Это красивая метка'
-                        }, {
-                            iconLayout: 'default#image',
-                            iconImageHref: 'img/content/map-icon.png',
-                            iconImageSize: [30, 42],
-                            iconImageOffset: [-3, -42]
-                        });
+            myPlacemark4 = new ymaps.Placemark([59.9674, 30.4209], {
+                hintContent: 'MrBurger',
+                balloonContent: 'Это красивая метка'
+            }, {
+                iconLayout: 'default#image',
+                iconImageHref: 'img/content/map-icon.png',
+                iconImageSize: [30, 42],
+                iconImageOffset: [-3, -42]
+            });
         myMap.geoObjects.add(myPlacemark1).add(myPlacemark2).add(myPlacemark3).add(myPlacemark4);
         myMap.behaviors.disable('scrollZoom');
     });
