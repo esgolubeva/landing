@@ -310,10 +310,10 @@ $(document).on('click', '[type="submit"]', function(event) {
 
     var name = $('form input[id="name"]').val();
 
-    sendMail(name, phone, email);
+    sendMail(name);
 })
 
-function sendMail(name, phone, email) {
+function sendMail(name) {
     $.ajax({
     	type: "POST",
     	url: "/",
