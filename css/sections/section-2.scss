@@ -3,65 +3,56 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-
     &__title {
-		color: $black;
-		margin-bottom: 70px;
-		text-align: center;
+        color: $black;
+        margin-bottom: 70px;
+        text-align: center;
     }
-
     &__list {
-		font-size: 0;
-	}
-	&__item {
-		display: inline-block;
-		width: calc((100% - 40px)/3);
-		margin-right: 20px;			
-		color: $black;
-		vertical-align: top;
-		text-align: center;
-
-		&:last-child {
-			margin-right: 0;
-		}
-
-		&__icon{
-			margin: 0 auto;
-			height: 100px;
-			width: 100px;
-			margin-bottom: 25px;
-
-			&-1 {
-				background: url(../img/icons/meat.svg) no-repeat center;
-			}
-
-			&-2 {
-				background: url(../img/icons/hand.svg) no-repeat center;
-			}
-
-			&-3 {
-				background: url(../img/icons/natural.svg) no-repeat center;
-			}
-		}
-
-		&__title {
-			font-family: 'Lifehack';
-			font-weight: 500;
-			font-size: 24.12px;
-			line-height: 28.14px;
-			margin-bottom: 15px;
-		}
-
-		&__text {
-			font-family: 'Ubuntu';
-			font-weight: 300;
-			font-size: 14.04px;
-			line-height: 24.07px;
-		}
+        font-size: 0;
+    }
+    &__item {
+        display: inline-block;
+        width: calc((100% - 40px)/3);
+        margin-right: 20px;
+        color: $black;
+        vertical-align: top;
+        text-align: center;
+        &:last-child {
+            margin-right: 0;
+        }
+        &__icon {
+            margin: 0 auto;
+            height: 100px;
+            width: 100px;
+            margin-bottom: 25px;
+            &-1 {
+                background: url(../img/icons/meat.svg) no-repeat center;
+            }
+            &-2 {
+                background: url(../img/icons/hand.svg) no-repeat center;
+            }
+            &-3 {
+                background: url(../img/icons/natural.svg) no-repeat center;
+            }
+        }
+        &__title {
+            font-family: 'Lifehack';
+            font-weight: 500;
+            font-size: 24.12px;
+            line-height: 28.14px;
+            margin-bottom: 15px;
+        }
+        &__text {
+            font-family: 'Ubuntu';
+            font-weight: 300;
+            font-size: 14.04px;
+            line-height: 24.07px;
+        }
     }
 }
 
 .best .container {
-	top: 50%;
-	transform: translateY(-50%);
+    top: 50%;
+    transform: translateY(-50%);
 }

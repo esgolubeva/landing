@@ -428,7 +428,9 @@ body {
 .maincontent {
   height: 100%;
   position: relative;
-  transform: translate3D(0, 0, 0);
+  -webkit-transform: translate3D(0, 0, 0);
+      -ms-transform: translate3D(0, 0, 0);
+          transform: translate3D(0, 0, 0);
   transition: 1s;
 }
 
@@ -646,7 +648,9 @@ h1, h2, h3, h4, h5, h6 {
 .hero__main {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .hero__main-left {
@@ -692,7 +696,9 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   margin: auto;
   transition: .2s;
   width: 30px;
@@ -700,7 +706,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .arrow-scroll:hover .arrow-scroll__pic {
-  transform: translate(-50%, -150%);
+  -webkit-transform: translate(-50%, -150%);
+      -ms-transform: translate(-50%, -150%);
+          transform: translate(-50%, -150%);
   width: 39px;
   height: 18px;
 }
@@ -771,16 +779,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .best .container {
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .burgers {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9b43b+0,eb8d38+45,eb8d38+55,f9b43b+100 */
   background: #f9b43b;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #f9b43b 0%, #eb8d38 45%, #eb8d38 55%, #f9b43b 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #f9b43b 0%, #eb8d38 45%, #eb8d38 55%, #f9b43b 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #f9b43b 0%, #eb8d38 45%, #eb8d38 55%, #f9b43b 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -790,7 +798,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .burgers .container {
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .burgers__main {
@@ -977,22 +987,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .slider__btn__pic {
-  transform: translateY(0) scale(1);
+  -webkit-transform: translateY(0) scale(1);
+      -ms-transform: translateY(0) scale(1);
+          transform: translateY(0) scale(1);
   transition: .2s;
 }
 
 .slider__btn:hover .slider__btn__pic {
-  transform: translateY(50%) scale(1.2);
+  -webkit-transform: translateY(50%) scale(1.2);
+      -ms-transform: translateY(50%) scale(1.2);
+          transform: translateY(50%) scale(1.2);
 }
 
 .slider__btn-next {
   left: 100%;
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .slider__btn-prev {
   right: 100%;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .slider {
@@ -1098,7 +1116,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .team-item_active .team-item__trigger::before {
-  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .team-item_active .team-item__content {
@@ -1198,7 +1218,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: -325px;
   margin-top: -40px;
   white-space: nowrap;
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   text-align: center;
 }
 
@@ -1235,7 +1257,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .reviews__review:hover .reviews__review__hover {
   opacity: 1;
-  transform: scale(1);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 
 .reviews__review__pic {
@@ -1247,7 +1271,8 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .reviews__review__hover {
@@ -1257,7 +1282,9 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   bottom: 0;
   background: rgba(20, 20, 20, 0.7);
-  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
   opacity: 0;
   transition: .3s;
   padding: 50px 20px 0;
@@ -1352,7 +1379,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .order .container {
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .order {
@@ -1537,6 +1566,26 @@ h1, h2, h3, h4, h5, h6 {
 .order__form__check__input:checked + .check .check-checked {
   width: 11px;
   height: 9px;
+}
+
+.order__popup {
+  width: 190px;
+  position: relative;
+  display: none;
+  text-align: center;
+}
+
+.order__popup__text {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  color: #2f3234;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.order .fancybox-inner {
+  height: auto;
 }
 
 #map {

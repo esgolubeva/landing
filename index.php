@@ -12,13 +12,10 @@ $message = "Сообщение от пользователя: $name";
 
 $send = mail($mail, $subject, $message, $headers);
 
-if ($send == 'true')
-{
-echo  "ok";
-}
-else
-{
-echo "error";
+if ($send == 'true') {
+	echo  "ok";
+} else {
+	echo "error";
 }
 
 ?>

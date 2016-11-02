@@ -1,6 +1,6 @@
 .order .container {
-	top: 50%;
-	transform: translateY(-50%);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .order {
@@ -8,184 +8,184 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-
-    &__title{
-    	color: $yellow;
-    	text-align: center;
-    	margin-bottom: 70px;
+    &__title {
+        color: $yellow;
+        text-align: center;
+        margin-bottom: 70px;
     }
-
-   	&__form {
-		color: white;
-		font-family: 'Ubuntu';
-		font-weight: 300;
-		font-size: 14px;
-		line-height: 24px;
-		margin-left: -20px;
-		
-		&-left {
-			width: 50%;
-			float: left;
-			}
-
-		&-right {
-			width: 50%;
-			float: left;
-		}
-	}
+    &__form {
+        color: white;
+        font-family: 'Ubuntu';
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        margin-left: -20px;
+        &-left {
+            width: 50%;
+            float: left;
+        }
+        &-right {
+            width: 50%;
+            float: left;
+        }
+    }
 }
 
 .order__form__label {
-	float: left;
-	margin-left: 20px;
-
-	&-2col {
-		width: calc(100% / 2 - 20px);
-	}
-
-	&-1col {
-		width: calc(100% - 20px);
-	}
-
-	&-4col {
-		width: calc(100% / 4 - 20px);
-	}
+    float: left;
+    margin-left: 20px;
+    &-2col {
+        width: calc(100% / 2 - 20px);
+    }
+    &-1col {
+        width: calc(100% - 20px);
+    }
+    &-4col {
+        width: calc(100% / 4 - 20px);
+    }
 }
 
 .order__form__label__text {
-	text-align: left;
-	margin-bottom: 3px;
+    text-align: left;
+    margin-bottom: 3px;
 }
 
 .order__form__input {
-	width: 100%;
-	height: 35px;
-	border-radius: 5px;
-	margin-bottom: 13px;
-	padding: 0 20px;
-
-	&:focus {
-		border: 2px solid $yellow;
-	}
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    margin-bottom: 13px;
+    padding: 0 20px;
+    &:focus {
+        border: 2px solid $yellow;
+    }
 }
 
 .order__form__textarea {
-	height: 110px;
-	margin-bottom: 0;
+    height: 110px;
+    margin-bottom: 0;
 }
 
-
-	
 .order__form__button {
-	border: none;
-	font-family: 'Ubuntu';
-	font-weight: 500;
-	cursor: pointer;
-	padding: 5px 15px;
-
-	&-reset {
-		background: transparent;
-		text-transform: none;
-		font-weight: 300;
-		color: white;
-		margin-left: 3px;
-
-		&:hover {
-			text-decoration: underline;
-		}
-	}
+    border: none;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    cursor: pointer;
+    padding: 5px 15px;
+    &-reset {
+        background: transparent;
+        text-transform: none;
+        font-weight: 300;
+        color: white;
+        margin-left: 3px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
-	
- .order__form__button-block,
- .order__form__check-block,
- .order__form__radio-block {
- 	text-align: left;
- 	margin-left: 20px;
- 	margin-bottom: 15px;
+
+.order__form__button-block,
+.order__form__check-block,
+.order__form__radio-block {
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 15px;
 }
 
 .order__form__radio,
 .order__form__check {
-	margin-right: 20px;
-	cursor: pointer;
-	font-size: 0;
-
-	&:last-child {
-		margin-right: 0;
-	}
-
-	&__text {
-		display: inline-block;
-		font-size: 14px;
-		padding-left: 9px;
-		vertical-align: middle;
-	}
-
-	&__input {
-		position: absolute;
- 		left: -9999px;
-	}
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 0;
+    &:last-child {
+        margin-right: 0;
+    }
+    &__text {
+        display: inline-block;
+        font-size: 14px;
+        padding-left: 9px;
+        vertical-align: middle;
+    }
+    &__input {
+        position: absolute;
+        left: -9999px;
+    }
 }
 
-
-
 .radio {
- 	position: relative;
- 	display: inline-block;
- 	content: '';
- 	border-radius: 50%;
- 	width: 15px;
- 	height: 15px;
- 	background: white;
- 	vertical-align: middle;
-
- 	&-checked {
-	 	content: '';
-	    width: 0px;
-	    height: 0px;
-	    background: $orange-dark;
-	    position: absolute;
-	    border-radius: 50%;
-	    top: 0;
-	    left: 0;
-	    bottom: 0;
-	    right: 0;
-	    margin: auto;
-	    transition: .3s;
- 	}
+    position: relative;
+    display: inline-block;
+    content: '';
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: white;
+    vertical-align: middle;
+    &-checked {
+        content: '';
+        width: 0px;
+        height: 0px;
+        background: $orange-dark;
+        position: absolute;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        transition: .3s;
+    }
 }
 
 .order__form__radio__input:checked + .radio .radio-checked {
-	    width: 7px;
-	    height: 7px;
-	
+    width: 7px;
+    height: 7px;
 }
 
 .check {
- 	position: relative;
- 	display: inline-block;
- 	content: '';
- 	width: 15px;
- 	height: 15px;
- 	background: white;
- 	vertical-align: middle;
-
-
- 	&-checked {
-	 	content: '';
-	    width: 0px;
-	    height: 0px;
-	    position: absolute;
-	    top: 0;
-	    left: 0;
-	    bottom: 0;
-	    right: 0;
-	    margin: auto;
-	    transition: .3s;
- 	}
+    position: relative;
+    display: inline-block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: white;
+    vertical-align: middle;
+    &-checked {
+        content: '';
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        transition: .3s;
+    }
 }
 
 .order__form__check__input:checked + .check .check-checked {
-	width: 11px;
-	height: 9px;
+    width: 11px;
+    height: 9px;
+}
+
+// modal
+.order__popup {
+    width: 190px;
+    position: relative;
+    display: none;
+    text-align: center;
+}
+
+.order__popup__text {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    color: $black;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.order .fancybox-inner {
+    height: auto;
 }

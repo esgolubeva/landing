@@ -4,7 +4,6 @@
     background-position: center center;
     background-size: cover;
     position: relative;
-
     &__block {
         width: 50%;
         background: rgba(47, 50, 52, 0.93);
@@ -14,15 +13,13 @@
         right: 0;
         padding: 100px 80px 0;
     }
-
     &__title {
         color: $yellow;
         text-align: left;
         margin-bottom: 68px;
     }
-
     &-list {
-        max-width: $container-width / 2 ;
+        max-width: $container-width / 2;
         margin-left: 20px;
     }
 }
@@ -30,12 +27,10 @@
 .team-item {
     text-align: left;
     margin-bottom: 22px;
-
     &__content {
         height: 0;
         overflow: hidden;
     }
-
     &__trigger {
         font-family: 'Gagalin';
         font-weight: normal;
@@ -44,11 +39,9 @@
         line-height: 28px;
         position: relative;
         transition: color .3s;
-
         &:hover {
             color: $yellow;
         }
-
         &::before {
             position: absolute;
             display: block;
@@ -65,36 +58,29 @@
             transition: .3s;
         }
     }
-
     &_active {
         margin-bottom: 35px;
-
         .team-item__trigger {
             color: $yellow;
-
             &::before {
                 transform: rotate(-180deg);
             }
         }
-        
         .team-item__content {
             margin-top: 4px;
             height: auto;
         }
     }
-
     &__photo {
         float: left;
         width: 100px;
         margin-top: 6px;
-
-         &__image {
+        &__image {
             width: 100px;
             height: 100px;
             border-radius: 50%;
         }
     }
-
     &__text {
         width: calc(100% - 120px);
         float: left;
@@ -104,12 +90,10 @@
         line-height: 24px;
         font-family: 'Ubuntu';
     }
-
     &__title {
         font-weight: bold;
         margin-bottom: 10px;
     }
-
     &__description {
         font-weight: 300;
     }
