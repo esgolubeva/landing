@@ -303,3 +303,28 @@ $('#popup__close').on('click', function(e){
 });
 
 
+// send form
+
+$(document).on('click', '[type="submit"]', function(event) {
+    event.preventDefault();
+
+    var name = $('form input[id="name"]').val();
+
+    sendMail(name, phone, email);
+})
+
+function sendMail(name, phone, email) {
+    $.ajax({
+    	type: "POST",
+    	url: "/",
+    	data: "name="+name,
+        success: function(data){
+        	console.log(data);
+            if (data == "ok") {
+                $.fancybox( 'Письмо успешно отправлено! <br><br> <img width="100" src="http://www.viralchart.ru/Images1/Images/Awesome/3.jpg" alt="">' );
+            } else {
+                alert("Все Плохо");
+            }
+        }
+    })
+}
