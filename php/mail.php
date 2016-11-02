@@ -18,7 +18,7 @@ echo  "ok";
 }
 else
 {
-echo $send;
+echo error_get_last();
 }
 
 ?>
